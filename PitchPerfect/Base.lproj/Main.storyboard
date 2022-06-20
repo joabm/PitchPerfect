@@ -78,21 +78,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Pv-AMd">
-                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <rect key="frame" x="16" y="88" width="358" height="634"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kdx-Sk-0Hq">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="722"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="211.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDt-c6-bWc" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="211.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Slow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-FC-FIy" userLabel="Fast Button">
+                                                <rect key="frame" x="179" y="0.0" width="179" height="211.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fzd-er-6LC">
+                                        <rect key="frame" x="0.0" y="211.33333333333331" width="358" height="211.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qT8-I0-kWH">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="211.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="HighPitch" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qun-Yk-lot">
+                                                <rect key="frame" x="179" y="0.0" width="179" height="211.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jih-Z1-f6z">
+                                        <rect key="frame" x="0.0" y="422.66666666666669" width="358" height="211.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6e-oA-r6t">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="211.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Echo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAC-Gg-GPH">
+                                                <rect key="frame" x="179" y="0.0" width="179" height="211.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co8-KZ-SpW">
+                                <rect key="frame" x="163" y="730" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1KL-0t-phu"/>
+                                    <constraint firstAttribute="width" constant="64" id="xQX-MP-GmF"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Stop Button" image="Stop"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jdr-vu-xmx"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jdr-vu-xmx" firstAttribute="trailing" secondItem="7vR-Pv-AMd" secondAttribute="trailing" id="DmT-Ih-JGl"/>
-                            <constraint firstItem="7vR-Pv-AMd" firstAttribute="leading" secondItem="Jdr-vu-xmx" secondAttribute="leading" id="QlM-ds-z8r"/>
+                            <constraint firstItem="co8-KZ-SpW" firstAttribute="centerX" secondItem="Jdr-vu-xmx" secondAttribute="centerX" id="45A-EK-HZz"/>
+                            <constraint firstItem="Jdr-vu-xmx" firstAttribute="trailing" secondItem="7vR-Pv-AMd" secondAttribute="trailing" constant="16" id="DmT-Ih-JGl"/>
+                            <constraint firstItem="co8-KZ-SpW" firstAttribute="top" secondItem="7vR-Pv-AMd" secondAttribute="bottom" constant="8" id="JPq-by-7jf"/>
+                            <constraint firstItem="7vR-Pv-AMd" firstAttribute="leading" secondItem="Jdr-vu-xmx" secondAttribute="leading" constant="16" id="QlM-ds-z8r"/>
                             <constraint firstItem="7vR-Pv-AMd" firstAttribute="top" secondItem="Jdr-vu-xmx" secondAttribute="top" id="TZl-f3-aro"/>
-                            <constraint firstItem="Jdr-vu-xmx" firstAttribute="bottom" secondItem="7vR-Pv-AMd" secondAttribute="bottom" id="poR-8f-NIc"/>
+                            <constraint firstItem="Jdr-vu-xmx" firstAttribute="bottom" secondItem="co8-KZ-SpW" secondAttribute="bottom" constant="16" id="Xhw-Zl-C8L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CfR-t5-QJw"/>
@@ -121,7 +174,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Echo" width="90" height="90"/>
+        <image name="Fast" width="90" height="90"/>
+        <image name="HighPitch" width="90" height="90"/>
+        <image name="LowPitch" width="90" height="90"/>
         <image name="RecordButton" width="155" height="155"/>
+        <image name="Reverb" width="90" height="90"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
