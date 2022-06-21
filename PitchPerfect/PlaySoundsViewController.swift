@@ -10,9 +10,19 @@ import UIKit
 class PlaySoundsViewController: UIViewController {
     
     var recordedAudioURL: URL!
-
+    
+    @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var fastButton: UIButton!
+    @IBOutlet weak var highButton: UIButton!
+    @IBOutlet weak var lowButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    @IBOutlet weak var reverbButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        slowButton.imageView?.contentMode = .scaleAspectFit
+
 
         // Do any additional setup after loading the view.
     }
