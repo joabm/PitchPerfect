@@ -9,7 +9,9 @@ import UIKit
 import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
-        
+    
+    // MARK: - IBOutlets
+
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
     @IBOutlet weak var highButton: UIButton!
@@ -18,11 +20,14 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    // MARK: - Audio variables
     var recordedAudioURL: URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
+    
+    // MARK: - Playback controls
 
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
@@ -51,6 +56,7 @@ class PlaySoundsViewController: UIViewController {
         stopAudio()
     }
     
+    // MARK: - UI controls
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
