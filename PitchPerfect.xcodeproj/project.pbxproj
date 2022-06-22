@@ -14,6 +14,7 @@
 		483A986C285A5BF7005CDA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483A986A285A5BF7005CDA3A /* Main.storyboard */; };
 		483A986E285A5BF8005CDA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483A986D285A5BF8005CDA3A /* Assets.xcassets */; };
 		483A9871285A5BF8005CDA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483A986F285A5BF8005CDA3A /* LaunchScreen.storyboard */; };
+		48FCC68F2862EB6700469796 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FCC68E2862EB6700469796 /* playsoundsviewcontroller-audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		483A986D285A5BF8005CDA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		483A9870285A5BF8005CDA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		483A9872285A5BF8005CDA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FCC68E2862EB6700469796 /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				483A986F285A5BF8005CDA3A /* LaunchScreen.storyboard */,
 				483A9872285A5BF8005CDA3A /* Info.plist */,
 				4813594A285E8D8A00A9A62A /* PlaySoundsViewController.swift */,
+				48FCC68E2862EB6700469796 /* playsoundsviewcontroller-audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				483A9869285A5BF7005CDA3A /* RecordSoundsViewController.swift in Sources */,
+				48FCC68F2862EB6700469796 /* playsoundsviewcontroller-audio.swift in Sources */,
 				483A9865285A5BF7005CDA3A /* AppDelegate.swift in Sources */,
 				4813594B285E8D8A00A9A62A /* PlaySoundsViewController.swift in Sources */,
 				483A9867285A5BF7005CDA3A /* SceneDelegate.swift in Sources */,
