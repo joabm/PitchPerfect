@@ -10,7 +10,7 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     
-    // MARK: - IBOutlets
+    // MARK: - Button connections
 
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
@@ -27,7 +27,7 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
-    // MARK: - Playback controls
+    // MARK: - Playback controls & connections
 
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
