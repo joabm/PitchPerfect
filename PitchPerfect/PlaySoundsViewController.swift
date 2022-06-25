@@ -67,7 +67,7 @@ class PlaySoundsViewController: UIViewController {
         configureUI(.notPlaying)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         stopAudio()
     }
 
