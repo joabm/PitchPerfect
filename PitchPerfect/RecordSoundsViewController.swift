@@ -29,7 +29,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
+
+    //ternary operator replaces if then conditional
     func configureUI(recordAudio: Bool) {
         recordingLabel.text = recordAudio ? "Recording in Progress" : "Tap to Record"
         stopRecordingButton.isEnabled = recordAudio
